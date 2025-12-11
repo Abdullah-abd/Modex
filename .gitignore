@@ -1,0 +1,84 @@
+# -----------------------------
+# Node / General
+# -----------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.pnpm-store
+
+# -----------------------------
+# Build Output
+# -----------------------------
+dist/
+build/
+.next/
+out/
+.tmp/
+temp/
+.cache/
+
+# -----------------------------
+# Environment Files
+# -----------------------------
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+
+# -----------------------------
+# Logs
+# -----------------------------
+logs/
+*.log
+logs/*.log
+debug.log
+
+# -----------------------------
+# OS / Editor files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+.idea/
+
+# -----------------------------
+# Frontend Specific
+# -----------------------------
+coverage/
+eslintcache/
+*.tsbuildinfo
+
+# React cache files
+.sass-cache/
+.cache/
+.parcel-cache/
+
+# -----------------------------
+# Backend Specific
+# -----------------------------
+/uploads
+/storage
+/public/uploads
+/tmp
+*.sqlite3
+*.db
+*.pid
+
+# Prisma (only if used)
+prisma/dev.db
+prisma/*.db-journal
+
+# -----------------------------
+# Optional 
+# (you can remove if you need them)
+# -----------------------------
+*.zip
+*.tar
+*.tgz

@@ -1,3 +1,13 @@
+-- users table (both admin and normal users)
+CREATE TABLE IF NOT EXISTS users (
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  email TEXT UNIQUE NOT NULL,
+  password TEXT NOT NULL,
+  role VARCHAR(10) DEFAULT 'user',   -- 'user' or 'admin'
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
 -- trips table
 CREATE TABLE IF NOT EXISTS trips (
   id SERIAL PRIMARY KEY,
